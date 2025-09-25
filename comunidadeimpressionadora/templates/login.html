@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Faça seu Login</h1>
+        <hr>
+        <form method="POST" action="" class="border p-4 pb-3 mt-2">
+            {{ form_login.csrf_token }}
+            <legend>Login</legend>
+            <fieldset>
+                <div class="form-group">
+                    {{ form_login.email.label(class="form-control-label") }}
+                    {% if form_login.email.errors %}
+                        {{ form_login.email(class="form-control is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for erro in form_login.email.errors %}
+                            {{ erro }}
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                        {{ form_login.email(class="form-control") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form_login.senha.label(class="form-control-label") }}
+                    {% if form_login.senha.errors %}
+                        {{ form_login.senha(class="form-control is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for erro in form_login.senha.errors %}
+                            {{ erro }}
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                        {{ form_login.senha(class="form-control") }}
+                    {% endif %}
+
+                </div>
+                <div class="form-group">
+                    {{ form_login.lembrar_dados.label(class="form-check-label") }}
+                    {{ form_login.lembrar_dados(class="form-check-input") }}
+                </div>
+            </fieldset>
+            {{ form_login.botao_submit_login(class="btn btn-primary mt-2 mb-2") }}
+        </form>
+        <form method="POST" action="" class="border p-4 pt-3 border-top-0">
+            {{ form_login_botoes.csrf_token }}
+            <div class="form-group">
+                Esqueceu sua senha? Nos envie um e-mail. {{ form_login_botoes.botao_esqueceu_senha(class="btn btn-link pb-2 ps-1") }}
+            </div>
+            <hr>
+                {{ form_login_botoes.botao_criar_conta(class="btn btn-success") }}
+        </form>
+    </div>
+{% endblock %}
