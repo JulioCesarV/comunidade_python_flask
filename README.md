@@ -24,7 +24,7 @@ Você pode acessá-lo aqui:
 
 
 ## 📂 Estrutura do projeto
-
+```
 comunidade_python_flask/
 │
 ├── comunidadeimpressionadora/ # Aplicação Flask
@@ -39,7 +39,7 @@ comunidade_python_flask/
 ├── main.py # Arquivo principal para rodar a aplicação
 ├── requirements.txt # Dependências do Python
 └── README.md # Este arquivo
-
+```
 
 ## 📝 Funcionalidades
 
@@ -53,9 +53,9 @@ comunidade_python_flask/
 
 
 ## 📌 Como rodar localmente
-
-1. Clone o repositório:  
 ```bash
+1. Clone o repositório:  
+
 git clone https://github.com/JulioCesarV/comunidade_python_flask.git
 
 
