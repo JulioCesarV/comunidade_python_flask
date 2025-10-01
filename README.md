@@ -1,85 +1,99 @@
-**Comunidade Python Flask**
+# Comunidade Python Flask
 
-**Sobre o projeto**
-
-O Comunidade Python Flask é uma aplicação web desenvolvida com o framework Flask, utilizando Python. O objetivo é proporcionar um espaço para interação entre desenvolvedores Python, permitindo o cadastro de usuários, criação de posts e visualização de conteúdo compartilhado pela comunidade.
+Um site de comunidade onde usuários podem se cadastrar, criar posts e visualizar perfis de outros membros. O projeto foi desenvolvido com **Python** e **Flask**, e está hospedado no **Render**.
 
 
-**Tecnologias utilizadas**
+## 🌐 Link do site
 
-Backend: Python 3.13, Flask
-
-Banco de dados: SQLite
-
-Frontend: HTML, CSS
-
-Deploy: Render
+[Comunidad Python Flask no Render](https://comunidade-python-flask.onrender.com/)
 
 
-**Como rodar localmente**
+## 🎥 Demonstração
 
-Clone o repositório:
+Foi gravado um vídeo mostrando o funcionamento do site.  
+Você pode acessá-lo aqui: 
 
+
+## ⚙️ Tecnologias utilizadas
+
+- **Backend:** Python 3.13, Flask  
+- **Banco de dados:** SQLite  
+- **Autenticação:** Flask-Login, Flask-Bcrypt  
+- **Frontend:** HTML, CSS, Bootstrap  
+- **Deploy:** Render  
+
+
+## 📂 Estrutura do projeto
+
+comunidade_python_flask/
+│
+├── comunidadeimpressionadora/ # Aplicação Flask
+│ ├── static/ # Arquivos estáticos (CSS, imagens)
+│ ├── templates/ # Templates HTML
+│ ├── init.py # Inicialização da aplicação
+│ ├── routes.py # Rotas do Flask
+│ ├── modules.py # Models do SQLAlchemy
+│ └── forms.py # Forms do Flask-WTF
+│
+├── instance/ # Banco de dados SQLite
+├── main.py # Arquivo principal para rodar a aplicação
+├── requirements.txt # Dependências do Python
+└── README.md # Este arquivo
+
+
+## 📝 Funcionalidades
+
+- Cadastro de usuários com email, username e senha criptografada  
+- Login e logout de usuários  
+- Edição de perfil, incluindo upload de foto de perfil  
+- Criação, edição e exclusão de posts  
+- Visualização de posts de todos os usuários  
+- Contagem de cursos e posts de cada usuário  
+- Foto de perfil padrão caso o usuário não tenha enviado uma imagem  
+
+
+## 📌 Como rodar localmente
+
+1. Clone o repositório:  
+```bash
 git clone https://github.com/JulioCesarV/comunidade_python_flask.git
+
+
+2. Entre na pasta do projeto:
+
 cd comunidade_python_flask
 
 
-Crie e ative um ambiente virtual:
+3. Crie um ambiente virtual (recomendado):
 
 python -m venv .venv
-source .venv/bin/activate  # No Windows: .venv\Scripts\activate
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
 
 
-Instale as dependências:
+4. Instale as dependências:
 
 pip install -r requirements.txt
 
 
-Execute a aplicação:
+5. Rode a aplicação:
 
-flask run
-
-
-Acesse em: http://localhost:5000
+python main.py
 
 
-**Acesse online**
-
-Você pode acessar a aplicação hospedada no Render através do seguinte link:
-
-https://comunidade-python-flask.onrender.com/
+Acesse no navegador: http://127.0.0.1:5000
 
 
-**Demonstração**
+📦 Repositório no GitHub
 
-Assista ao vídeo abaixo para ver o funcionamento da aplicação:
-
-
-**Funcionalidades**
-
-Cadastro e login de usuários
-
-Criação, edição e exclusão de posts
-
-Visualização de posts por outros usuários
-
-Interface simples e intuitiva
+Código fonte disponível em: [GitHub - comunidade_python_flask](https://github.com/JulioCesarV/comunidade_python_flask)
 
 
-**Como contribuir**
+📝 Observações
 
-Faça um fork deste repositório.
+O deploy está hospedado no Render, tornando o site acessível online.
 
-Crie uma branch para sua feature (git checkout -b feature/nome-da-feature).
+Fotos de perfil são armazenadas localmente na pasta static/fotos_perfil.
 
-Faça commit das suas alterações (git commit -am 'Adiciona nova feature').
+Caso o usuário não envie uma foto, será exibida a imagem padrão default.jpg.
 
-Envie para o branch principal (git push origin feature/nome-da-feature).
-
-Abra um Pull Request.
-
-
-**Licença**
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE
- para mais detalhes.
