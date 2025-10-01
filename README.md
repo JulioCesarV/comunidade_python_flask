@@ -11,7 +11,7 @@ Um site de comunidade onde usuários podem se cadastrar, criar posts e visualiza
 ## 🎥 Demonstração
 
 Foi gravado um vídeo mostrando o funcionamento do site.  
-Você pode acessá-lo aqui: 
+Você pode acessá-lo aqui: https://www.linkedin.com/posts/julio-cesar-88220893_python-flask-flaskform-ugcPost-7379172423654539264-Jzzr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPJQuIBRJYffqf6DSF9adLAoC3ZVgqpSQA
 
 
 ## ⚙️ Tecnologias utilizadas
