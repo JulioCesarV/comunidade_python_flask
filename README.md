@@ -86,7 +86,7 @@ Acesse no navegador: http://127.0.0.1:5000
 
 📦 Repositório no GitHub
 
-Código fonte disponível em: [GitHub - comunidade_python_flask](https://github.com/JulioCesarV/comunidade_python_flask)
+Código fonte disponível em: https://github.com/JulioCesarV/comunidade_python_flask
 
 
 📝 Observações
